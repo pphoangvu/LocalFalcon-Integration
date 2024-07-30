@@ -1,0 +1,27 @@
+
+APP:
+  ENVIRONMENT: DEV
+  DEBUG: 0
+  PREFECTBLOCKS:
+    SNOWFLAKE:
+        CONNECTOR_BLOCKNAME: 
+            DEV: snowflake-auth-sb
+            STG: snowflake-auth-sb
+            QA:  snowflake-auth-sb
+            PROD: snowflake-auth-prod
+        DATABASE: 
+            DEV: DEV_MARKETING_RAW
+            STG: STAGE_MARKETING_RAW
+            QA:  QA_MARKETING_RAW
+            PROD: PROD_MARKETING_RAW
+        WAREHOUSE:
+            DEV: DEV_MARKETING_INGEST_WH
+            STG: STAGE_MARKETING_INGEST_WH
+            QA:  QA_MARKETING_INGEST_WH
+            PROD: PROD_MARKETING_INGEST_WH
+    API:
+        API_BLOCKNAME:
+            DEV: localfalcon-api-dev
+            STG: localfalcon-api-stg
+            QA:  localfalcon-api-qa
+            PROD: localfalcon-api-prod
